@@ -65,7 +65,7 @@ class SpecifyAmountFragment : Fragment(), View.OnClickListener {
                 }
             }
 
-            R.id.cancel_btn -> activity!!.onBackPressed()
+            R.id.cancel_btn -> requireActivity().onBackPressedDispatcher.onBackPressed()
         }
     }
 }
